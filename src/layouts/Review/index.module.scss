@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap");
+@import "react-quill/dist/quill.snow.css";
+@font-face {
+  font-family: AvenirNext-Regular;
+  src: url("../../fonts/avenirnext/AvenirNext-Regular-08.ttf");
+}
+
+@font-face {
+  font-family: AvenirNext-Bold;
+  src: url("../../fonts/avenirnext/AvenirNext-Bold-01.ttf");
+}
+
+@font-face {
+  font-family: AvenirNext-Medium;
+  src: url("../../fonts/avenirnext/AvenirNext-Medium-06.ttf");
+}
+
+@font-face {
+  font-family: AvenirNext-Bold;
+  src: url("../../fonts/avenirnext/AvenirNext-Italic-05.ttf");
+}
+
+.wrapper_review {
+  width: 646px;
+  margin: 50px auto;
+
+  img {
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .main_content {
+    .header_content {
+      font-family: "Josefin Sans", sans-serif !important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #787878;
+      margin-bottom: 40px;
+      .title {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 50px;
+        margin-bottom: 25px;
+        // text-align: center;
+      }
+    }
+    .info_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Josefin Sans", sans-serif !important;
+      font-size: 16px;
+      line-height: 25px;
+      .bottom_content {
+        display: flex;
+        align-items: center;
+        .user_icon {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background-color: #787878;
+        }
+        .info_user {
+          margin-left: 10px;
+          span {
+            font-size: 13px;
+          }
+          .name {
+            background: -webkit-linear-gradient(
+              90deg,
+              #48c6ef -0.07%,
+              #6f86d6 99.87%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .date {
+            color: black;
+            font-weight: 300;
+          }
+        }
+      }
+      .head_content {
+        display: flex;
+        justify-content: flex-end;
+        font-family: "Josefin Sans", sans-serif !important;
+        font-size: 16px;
+        line-height: 25px;
+        margin-right: -5px !important;
+        .guide {
+          // background-color: #54b76f;
+          border-radius: 5px;
+          padding: 5px;
+          color: white;
+          display: flex;
+          align-items: center;
+          a,
+          i,
+          span {
+            font-size: 12px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+          }
+          a {
+            &:hover {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .body_content {
+      font-family: AvenirNext-Regular;
+      font-size: 16px;
+      line-height: 25px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .wrapper_review {
+    width: 450px;
+    .main_content {
+      .header_content {
+        .title {
+          font-size: 40px !important;
+        }
+      }
+    }
+  }
+}
+
+.preview_goback {
+  background-color: #52c41a;
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-weight: 500;
+}

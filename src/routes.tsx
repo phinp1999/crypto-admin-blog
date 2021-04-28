@@ -1,0 +1,51 @@
+export const routes = [
+  {
+    id: "2",
+    icon: "user",
+    name: "Users",
+    route: "/user",
+    role: "admin",
+  },
+  {
+    id: "3",
+    icon: "tag",
+    name: "Tag",
+    route: "/tag",
+    role: "admin",
+  },
+  {
+    id: "4",
+    icon: "group",
+    name: "Collection",
+    route: "/collection",
+    role: "admin",
+  },
+  {
+    id: "14",
+    icon: "group",
+    name: "Collection articles",
+    route: "/collection-article/:id",
+    role: "admin",
+  },
+  {
+    id: "11",
+    icon: "read",
+    name: "Article",
+    role: "any",
+  },
+  {
+    id: "12",
+    menuParentId: "11",
+    icon: "setting",
+    name: "Management",
+    route: "/article",
+    role: "any",
+  },
+  {
+    id: "13",
+    icon: "edit",
+    name: "Write article",
+    route: "/article/:id",
+    role: "any",
+  },
+];

@@ -1,0 +1,17 @@
+@import "./helpers/reset";
+@import "./helpers/variable";
+@import "./layouts/dashboard";
+@import "./layouts/editor";
+@import "./layouts/tag";
+
+@import "./layouts/login";
+.test {
+  text-align: center;
+  background-color: black;
+  height: 100vh;
+  color: white;
+}
+
+.ql-editor {
+  line-height: 25px;
+}

@@ -1,0 +1,15 @@
+.color-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .color-picked {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.tag-container {
+  .ant-table-content {
+    overflow: inherit !important;
+  }
+}
